@@ -1,0 +1,8 @@
+# Node dependencies
+node_modules/
+
+# Environment files
+.env
+
+# Package manager lock files (optional, depending on your setup)
+package-lock.json
