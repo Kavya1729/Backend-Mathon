@@ -11,7 +11,7 @@ A RESTful API-based backend for a **Chapter Performance Dashboard**, designed to
 - **MongoDB** with **Mongoose**
 - **Redis** (for Caching & Rate Limiting)
 - **Multer** (for JSON file upload)
-- **Render/Railway** (Deployment Platform)
+- **Render** (Deployment Platform)
 
 ---
 
