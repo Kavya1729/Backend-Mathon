@@ -1,5 +1,6 @@
 const Chapter = require("../models/Chapter");
-const redisClient = require("../config/redis");
+const getRedisClient = require("../config/redis");
+
 
 exports.getChapters = async (req, res) => {
   try {
@@ -73,6 +74,7 @@ exports.uploadChapters = async (req, res) => {
 
     if (successful.length > 0) {
       await Chapter.insertMany(successful);
+      const redisClient = await getRedisClient(); 
       await redisClient.del("chapters");
     }
 
